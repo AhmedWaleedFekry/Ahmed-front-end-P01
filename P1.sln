@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "P1", "P1\P1.vbproj", "{9BD21147-E928-45C5-BE98-164EDD44CCAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E213AE05-0BA4-4E88-8401-83BF9BBFC938}"
+	ProjectSection(SolutionItems) = preProject
+		about us.html = about us.html
+		E-commerce.css = E-commerce.css
+		E-commerce.html = E-commerce.html
+		product01.html = product01.html
+		products.html = products.html
+		signup.html = signup.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BD21147-E928-45C5-BE98-164EDD44CCAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BD21147-E928-45C5-BE98-164EDD44CCAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BD21147-E928-45C5-BE98-164EDD44CCAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BD21147-E928-45C5-BE98-164EDD44CCAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9CD0C9C5-7EA3-42F8-BC7F-1A4BC2B5DA3F}
+	EndGlobalSection
+EndGlobal

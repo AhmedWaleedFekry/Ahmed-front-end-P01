@@ -1,0 +1,104 @@
+﻿body {
+    background-image: url("1h1.jpg");
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the top */
+    height: 100vh;
+    margin: 0;
+    padding-top: 20px; /* Add padding to create some space from the top */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000; /* Default link color */
+}
+
+.form-container {
+    background-color: #c2c2c2;
+    padding: 20px;
+    width: 20%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #c2c2c2;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: center; /* Center-align the elements */
+    margin-bottom: 15px;
+}
+
+.form-group img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 10px; /* Add space between the image and the input */
+}
+
+.form-group input {
+    width: 80%;
+    padding: 10px;
+    background-color: #c2c2c2;
+    border: none; /* Remove default border */
+    border-bottom: 2px solid #000; /* Add a solid line under inputs */
+    border-radius: 0; /* Remove border-radius */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d924e3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; /* Add margin to separate the buttons */
+}
+
+button:hover {
+    background-color: #7a1389;
+}
+
+.signup-button {
+    text-decoration-color: #d924e3;
+}
+
+.signup-button:hover {
+    text-decoration: underline auto;
+}
+
+/* Ensure About Us and Contact Us pages have black text */
+.about-container, .contact-container {
+    color: black; /* Ensure text color is black */
+}
+
+/* Ensure products page items are styled */
+.product-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
