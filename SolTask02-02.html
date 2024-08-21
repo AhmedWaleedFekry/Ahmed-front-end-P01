@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Example</title>
+    <script>
+function capitalizeFirstLetterOfEachWord(str) {
+  // Split the string into words using a space as the delimiter
+  var words = str.split(' ');
+
+  // Iterate through each word
+  for (var i = 0; i < words.length; i++) {
+    // Ensure the word is not empty
+    if (words[i].length > 0) {
+      // Convert the first letter to uppercase and concatenate it with the rest of the word
+      words[i] = words[i].substring(0, 1).toUpperCase() + words[i].substring(1);
+    }
+  }
+
+  // Join the words back into a single string
+  return words.join(' ');
+}
+
+// Example usage
+var inputString = "hello world, this is a test string.";
+var result = capitalizeFirstLetterOfEachWord(inputString);
+
+console.log(result); // Output: "Hello World, This Is A Test String."
+
+    </script>
+</head>
+<body>
+    <h1>Check the console for results</h1>
+    <script src="External.js"></script>
+</body>
+</html>

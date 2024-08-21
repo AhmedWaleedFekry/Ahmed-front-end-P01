@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grades</title>
+</head>
+<body>
+    <script>
+        var students = [
+            { fname: 'ali', age: 22, grade: 100 },
+            { fname: 'nora', age: 20, grade: 90 },
+            { fname: 'nada', age: 25, grade: 75 },
+            { fname: 'heba', age: 19, grade: 50 },
+            { fname: 'bassem', age: 21, grade: 40 }
+        ];
+
+        // Function to create and append header
+        function createHeader(text) {
+            var header = document.createElement('h1');
+            header.style.color = 'red';
+            header.textContent = text;
+            document.body.appendChild(header);
+        }
+
+        // Function to create and append student data
+        function createStudentData(studentArray) {
+            studentArray.forEach(student => {
+                var studentData = document.createElement('p');
+                studentData.textContent = `Name: ${student.fname}, Age: ${student.age}, Grade: ${student.grade}`;
+                document.body.appendChild(studentData);
+            });
+        }
+
+        // Print all students' data
+        createHeader('All Students');
+        createStudentData(students);
+
+        // Filter students with grades more than 80
+        var highGradeStudents = students.filter(student => student.grade > 80);
+
+        // Print students with grades more than 80
+        createHeader('Students have grades more than 80');
+        createStudentData(highGradeStudents);
+
+        // Sort students by names in ascending order
+        var sortedStudents = students.slice().sort((a, b) => a.fname.localeCompare(b.fname));
+
+        // Print sorted students
+        createHeader('All Students ordered by name');
+        createStudentData(sortedStudents);
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <style>
+        .number-container {
+            margin-bottom: 5px;
+        }
+        .thick-border {
+            display: inline-block;
+            border: 5px solid red;
+            padding: 5px;
+        }
+        .thin-border {
+            display: inline-block;
+            border: 2px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        let number = 1;
+        const container = document.getElementById('container');
+
+        function printNumber() {
+            const numberElement = document.createElement('div');
+            numberElement.classList.add('number-container');
+            numberElement.innerHTML = `<div class="thick-border"><div class="thin-border">${number}</div></div>`;
+            container.appendChild(numberElement);
+
+            document.title = number;
+            
+            if (number < 100) {
+                number++;
+                setTimeout(printNumber, 1000);
+            }
+        }
+
+        window.onload = printNumber;
+    </script>
+</body>
+</html>
